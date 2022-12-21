@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#E1E1F6 ;
+    min-height: 100vh;
+}
+.pw-container{
+    background-color:#AA97FC ;
+    box-shadow:20px 20px 20px 2px  #8580F7 ;
+    transform: translate(42px, 18px);
+    padding: 4rem;
+}
+
+.pw {
+
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #EF8462;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+}
+
+.pw button{
+    background-color: #EF8462;
+    border: none;
+    color: #8580F7 ;
+    background-color: black;
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 0.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform ;
+    opacity: 0;
+    cursor: pointer;;
+}
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+.pw-body{
+    padding:  0 1rem 1rem;
+}
+.form-control{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+}
+#generate{
+    background-color: #EF8462;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+}
